@@ -4,13 +4,21 @@ This code provides REST APIs to invoke Alexa Proactive Events APIs. 2 APIs are p
 1) /auth: Returns the authentication token which is valid for 3600 seconds
 2) /postevent: Sends a Proactive event to Alexa devices with the linked account.
 
-Requests:
+Build:
 
-1) /auth : Method POST
+1) Clone the repository and run:
+   npm install
+   node server.js
+   
+   Server starts on port 3000
+
+APIs
+
+1) localhost:3000/auth : Method POST
 
 Returns a token
 
-2) /postevent: Method Post
+2) localhost:3000/postevent: Method Post
 
 Request Body: JSON Object. For e.g:
 
